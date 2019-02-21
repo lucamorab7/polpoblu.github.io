@@ -36,13 +36,13 @@ position: fixed;
     z-index: 0;
     top: 50%;
     left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(0%) translateY(0%);
+    -ms-transform: translateX(0%) translateY(0%);
+    transform: translateX(0%) translateY(0%);
     -webkit-transition: 1s opacity;
     -o-transition: 1s opacity;
     transition: 1s opacity;
     min-width: 100%;
-    min-height: 30%;
+    max-height: 30%;
     width: auto;
     height: auto; }
