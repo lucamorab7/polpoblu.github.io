@@ -30,9 +30,7 @@ position: fixed;
     position: relative;
     display: block; }
   .view2 video.video-intro2 {
-    z-index: 0;
-    top: 100%;
-    left: 100%;
+position: fixed;
     -webkit-transition: 1s opacity;
     -o-transition: 1s opacity;
     transition: 1s opacity;
