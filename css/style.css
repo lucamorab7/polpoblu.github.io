@@ -33,9 +33,9 @@ position: fixed;
     z-index: 0;
     top: 100%;
     left: 100%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
+    \* -webkit-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); *\
     -webkit-transition: 1s opacity;
     -o-transition: 1s opacity;
     transition: 1s opacity;
