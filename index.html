@@ -2,360 +2,695 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!--Main Navigation-->
-    <header>
+<!-- Start your project here-->
+<!-- Main navigation -->
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto smooth-scroll">
+  <li class="nav-item">
+      <a class="nav-link" href="#intro">Home
+      </a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" href="#about" data-offset="90">About</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" href="#projects" data-offset="90">Projects</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" href="#gallery" data-offset="90">Gallery</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" href="#testimonials" data-offset="30">Testimonials</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" href="#articles" data-offset="90">Articles</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" href="#contact" data-offset="90">Contact</a>
+  </li>
+</ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+  <!-- Full Page Intro -->
+  <div class="view">
+    <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay muted loop>
+      <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
+    </video>
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+      <!-- Content -->
+      <div class="container px-md-3 px-sm-0">
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+          <!--Grid column-->
+          <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+            <h3 class="display-3 font-weight-bold white-text mb-0 pt-md-5 pt-5">Portfolio</h3>
+            <hr class="hr-light my-4 w-75">
+            <h4 class="subtext-header mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti consequuntur nihil.</h4>
+            <a href="#!" class="btn btn-rounded btn-outline-white">
+              <i class="fas fa-home "></i> Visit us
+            </a>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+  <!-- Full Page Intro -->
+</header>
+<!--Main Navigation-->
 
-        <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-            <div class="container">
+<!--Main layout-->
+<main>
+<!--Section: about-->
+<section id="about" class="py-5">
 
-                <!-- Brand -->
-                <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-                    <strong class="blue-text">MDB</strong>
-                </a>
+    <!-- Container -->
+    <div class="container">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">Why is it so great?</h2>
+        <!-- Section description -->
+        <p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet,
+            consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad
+            minim veniam.</p>
 
-                <!-- Collapse -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <!-- Grid row -->
+        <div class="row">
 
-                <!-- Links -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Grid column -->
+            <div class="col-lg-5 text-center text-lg-left">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/screens-section.jpg" alt="Sample image">
+            </div>
+            <!-- Grid column -->
 
-                    <!-- Left -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link waves-effect" href="#">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About MDB</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">Free download</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link waves-effect" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Free tutorials</a>
-                        </li>
-                    </ul>
+            <!-- Grid column -->
+            <div class="col-lg-7">
 
-                    <!-- Right -->
-                    <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a href="https://www.facebook.com/mdbootstrap" class="nav-link waves-effect" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect"
-                                target="_blank">
-                                <i class="fab fa-github mr-2"></i>MDB GitHub
-                            </a>
-                        </li>
-                    </ul>
+                <!-- Grid row -->
+                <div class="row mb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-1">
+                        <i class="fas fa-share fa-lg indigo-text"></i>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-xl-10 col-md-11 col-10">
+                        <h5 class="font-weight-bold mb-3">Safety</h5>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                            minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <!-- Grid row -->
+                <div class="row mb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-1">
+                        <i class="fas fa-share fa-lg indigo-text"></i>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-xl-10 col-md-11 col-10">
+                        <h5 class="font-weight-bold mb-3">Technology</h5>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim ad
+                            minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-1">
+                        <i class="fas fa-share fa-lg indigo-text"></i>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-xl-10 col-md-11 col-10">
+                        <h5 class="font-weight-bold mb-3">Finance</h5>
+                        <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit enim
+                            ad minima veniam, quis nostrum exercitationem ullam. Reprehenderit maiores aperiam
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!--Grid row-->
+
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Container -->
+
+</section>
+<!--Section: about-->
+	
+   <!--Section: projects-->
+  <section id="projects" class="text-center py-5" style="background-color: #eee;">
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5">Our best projects</h2>
+        <!-- Section description -->
+        <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+
+        <!-- Grid row -->
+        <div class="row text-center">
+
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                <!--Featured image-->
+                <div class="view overlay rounded z-depth-1">
+                    <img src="https://mdbootstrap.com/img/Photos/Others/images/58.jpg" class="img-fluid" alt="Sample project image">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <!--Excerpt-->
+                <div class="card-body pb-0">
+                    <h4 class="font-weight-bold my-3">Title of the news</h4>
+                    <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        necessitatibus saepe eveniet ut et voluptates repudiandae.
+                    </p>
+                    <a class="btn btn-purple btn-sm"><i class="fas fa-clone left"></i> View project</a>
+                </div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                <!--Featured image-->
+                <div class="view overlay rounded z-depth-1">
+                    <img src="https://mdbootstrap.com/img/Photos/Others/project4.jpg" class="img-fluid" alt="Sample project image">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <!--Excerpt-->
+                <div class="card-body pb-0">
+                    <h4 class="font-weight-bold my-3">Title of the news</h4>
+                    <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        necessitatibus saepe eveniet ut et voluptates repudiandae.
+                    </p>
+                    <a class="btn btn-purple btn-sm"><i class="fas fa-clone left"></i> View project</a>
+                </div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-lg-4 col-md-6">
+                <!--Featured image-->
+                <div class="view overlay rounded z-depth-1">
+                    <img src="https://mdbootstrap.com/img/Photos/Others/images/88.jpg" class="img-fluid" alt="Sample project image">
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <!--Excerpt-->
+                <div class="card-body pb-0">
+                    <h4 class="font-weight-bold my-3">Title of the news</h4>
+                    <p class="grey-text">Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        necessitatibus saepe eveniet ut et voluptates repudiandae.
+                    </p>
+                    <a class="btn btn-purple btn-sm"><i class="fas fa-clone left"></i> View project</a>
+                </div>
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Container -->
+
+</section>
+<!--Section: projects-->
+
+   <!--Section: gallery-->
+<section id="gallery" class="text-center py-5">
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5">Our best projects</h2>
+        <!-- Section description -->
+        <p class="grey-text w-responsive mx-auto mb-5">Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <div id="mdb-lightbox-ui"></div>
+
+                <div class="mdb-lightbox">
+
+                    <figure class="col-md-4">
+                        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(145).jpg"
+                            data-size="1600x1067">
+                            <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(145).jpg"
+                                class="img-fluid">
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).jpg"
+                            data-size="1600x1067">
+                            <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(150).jpg"
+                                class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(152).jpg"
+                            data-size="1600x1067">
+                            <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(152).jpg"
+                                class="img-fluid z-depth-1-half" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(42).jpg" data-size="1600x1067">
+                            <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(42).jpg"
+                                class="img-fluid z-depth-1-half" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(151).jpg"
+                            data-size="1600x1067">
+                            <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(151).jpg"
+                                class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg" data-size="1600x1067">
+                            <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(40).jpg"
+                                class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(148).jpg"
+                            data-size="1600x1067">
+                            <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(148).jpg"
+                                class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(147).jpg"
+                            data-size="1600x1067">
+                            <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+                                class="img-fluid" />
+                        </a>
+                    </figure>
+
+                    <figure class="col-md-4">
+                        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(149).jpg"
+                            data-size="1600x1067">
+                            <img src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(149).jpg"
+                                class="img-fluid" />
+                        </a>
+                    </figure>
 
                 </div>
 
             </div>
-        </nav>
-        <!-- Navbar -->
+        </div>
 
-    </header>
-    <!--Main Navigation-->
+    </div>
+    <!-- Container -->
 
-    <!--Main layout-->
-    <main class="mt-5 pt-5">
-        <div class="container">
+</section>
+<!--Section: gallery-->
 
-            <!--Section: Jumbotron-->
-            <section class="card blue-gradient wow fadeIn" id="intro">
+    
 
-                <!-- Content -->
-                <div class="card-body text-white text-center py-5 px-5 my-5">
+    <!--Section: call to action-->
+  <div class="streak streak-md streak-photo" style="background-image:url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img(115).jpg')">
+    <div class="flex-center rgba-black-light pattern-1">
+        <div class="white-text smooth-scroll mx-4">
+            <h2 class="h2-responsive mb-5 wow fadeIn">Yoooooooooooo</h2>
+            <div class="text-center">
+                <a href="#contact" class="btn btn-outline-white wow fadeIn " data-offset="100" data-wow-delay="0.2s">Contact
+                    us</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Section: call to action-->
 
-                    <h1 class="mb-4">
-                        <strong>Learn Bootstrap 4 with MDB</strong>
-                    </h1>
-                    <p>
-                        <strong>Best & free guide of responsive web design</strong>
-                    </p>
-                    <p class="mb-4">
-                        <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written
-                            versions available. Create your own, stunning website.</strong>
-                    </p>
-                    <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start free tutorial
-                        <i class="fas fa-graduation-cap ml-2"></i>
-                    </a>
+   <!--Section: articles-->
+<section id="articles" class="text-center py-5">
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold mb-5">Articles</h2>
+
+        <!--Grid row-->
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+<div class="view view-cascade">
+    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+        alt="Card image cap">
+    <a>
+        <div class="mask img-gradient"></div>
+    </a>
+</div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Label -->
+                        <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Culinary</h5>
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
+                        <!-- Text -->
+                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                            corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                        <!-- Button -->
+                        <a class="btn btn-unique">Button</a>
+
+                    </div>
 
                 </div>
-                <!-- Content -->
-            </section>
-            <!--Section: Jumbotron-->
+                <!-- Card Narrower -->
 
-            <!--Section: Cards-->
-            <section class="pt-5">
+            </div>
+            <!--Grid column-->
 
-                <!-- Heading & Description -->
-                <div class="wow fadeIn">
-                    <!--Section heading-->
-                    <h2 class="h1 text-center mb-5">What is MDB?</h2>
-                    <!--Section description-->
-                    <p class="text-center">MDB is world's most popular Material Design framework for building responsive, mobile-first websites
-                        and apps. </p>
-                    <p class="text-center mb-5 pb-5">Trusted by over
-                        <strong>400 000</strong> developers and designers. Easy to use & customize. 400+ material UI elements, templates
-                        & tutorials.</p>
-                </div>
-                <!-- Heading & Description -->
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
 
-                <!--Grid row-->
-                <div class="row wow fadeIn">
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
 
-                    <!--Grid column-->
-                    <div class="col-lg-5 col-xl-4 mb-4">
-                        <!--Featured image-->
-                        <div class="view overlay rounded z-depth-1-half">
-                            <div class="view overlay">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Card image -->
+<div class="view view-cascade">
+    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+        alt="Card image cap">
+    <a>
+        <div class="mask img-gradient"></div>
+    </a>
+</div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Label -->
+                        <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Culinary</h5>
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
+                        <!-- Text -->
+                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                            corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                        <!-- Button -->
+                        <a class="btn btn-unique">Button</a>
+
                     </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
-                        <h3 class="mb-3 font-weight-bold dark-grey-text">
-                            <strong>MDB Quick Start</strong>
-                        </h3>
-                        <p class="grey-text">Get started with MDBootstrap, the world's most popular Material Design framework for building responsive,
-                            mobile-first sites.</p>
-                        <p>
-                            <strong>5 minutes, a few clicks and... done. You will be surprised at how easy it is.</strong>
-                        </p>
-                        <a href="https://www.youtube.com/watch?v=cXTThxoywNQ" target="_blank" class="btn btn-primary btn-md">Start tutorial
-                            <i class="fas fa-play ml-2"></i>
-                        </a>
-                    </div>
-                    <!--Grid column-->
 
                 </div>
-                <!--Grid row-->
+                <!-- Card Narrower -->
 
-                <hr class="mb-5">
+            </div>
+            <!--Grid column-->
 
-                <!--Grid row-->
-                <div class="row mt-3 wow fadeIn">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
 
-                    <!--Grid column-->
-                    <div class="col-lg-5 col-xl-4 mb-4">
-                        <!--Featured image-->
-                        <div class="view overlay rounded z-depth-1">
-                            <img src="https://mdbootstrap.com/wp-content/uploads/2017/11/brandflow-tutorial-fb.jpg" class="img-fluid" alt="">
-                            <a href="https://mdbootstrap.com/education/tech-marketing/automated-app-introduction/" target="_blank">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+<div class="view view-cascade">
+    <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg"
+        alt="Card image cap">
+    <a>
+        <div class="mask img-gradient"></div>
+    </a>
+</div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Label -->
+                        <h5 class="pink-text pb-2 pt-1"><i class="fas fa-utensils"></i> Culinary</h5>
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Cheat day inspirations</h4>
+                        <!-- Text -->
+                        <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                            corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                        <!-- Button -->
+                        <a class="btn btn-unique">Button</a>
+
                     </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
-                        <h3 class="mb-3 font-weight-bold dark-grey-text">
-                            <strong>Bootstrap Automation</strong>
-                        </h3>
-                        <p class="grey-text">Learn how to create a smart website which learns your user and reacts properly to his behavior.</p>
-                        <a href="https://mdbootstrap.com/education/tech-marketing/automated-app-introduction/" target="_blank" class="btn btn-primary btn-md">Start tutorial
-                            <i class="fas fa-play ml-2"></i>
-                        </a>
-                    </div>
-                    <!--Grid column-->
 
                 </div>
-                <!--Grid row-->
+                <!-- Card Narrower -->
 
-                <hr class="mb-5">
-
-                <!--Grid row-->
-                <div class="row wow fadeIn">
-
-                    <!--Grid column-->
-                    <div class="col-lg-5 col-xl-4 mb-4">
-                        <!--Featured image-->
-                        <div class="view overlay rounded z-depth-1">
-                            <img src="https://mdbootstrap.com/wp-content/uploads/2018/01/push-fb.jpg" class="img-fluid" alt="">
-                            <a href="https://mdbootstrap.com/education/tech-marketing/web-push-introduction/" target="_blank">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
-                        <h3 class="mb-3 font-weight-bold dark-grey-text">
-                            <strong>Web Push notifications</strong>
-                        </h3>
-                        <p class="grey-text">Push messaging provides a simple and effective way to re-engage with your users and in this tutorial
-                            you'll learn how to add push notifications to your web app</p>
-                        <a href="https://mdbootstrap.com/education/tech-marketing/web-push-introduction/" target="_blank" class="btn btn-primary btn-md">Start tutorial
-                            <i class="fas fa-play ml-2"></i>
-                        </a>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <hr class="mb-5">
-
-                <!--Pagination-->
-                <nav class="d-flex justify-content-center wow fadeIn">
-                    <ul class="pagination pg-blue">
-
-                        <!--Arrow left-->
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                        </li>
-
-                        <li class="page-item active">
-                            <a class="page-link" href="#">1
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">4</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">5</a>
-                        </li>
-
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!--Pagination-->
-
-            </section>
-            <!--Section: Cards-->
+            </div>
+            <!--Grid column-->
 
         </div>
-    </main>
-    <!--Main layout-->
+        <!--Grid row-->
 
-    <!--Footer-->
-    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
+    </div>
+    <!-- Container -->
 
-        <!--Call to action-->
-        <div class="pt-4">
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank" role="button">Download MDB
-                <i class="fas fa-download ml-2"></i>
-            </a>
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
-            </a>
+</section>
+<!--Section: articles-->
+
+    <!--Section: contact-->
+<section id="contact" class="py-5" style="background-color: #eee;">
+
+    <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold text-center mb-5">Contact us</h2>
+        <!-- Section description -->
+        <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-9 mb-md-0 mb-5">
+
+            <form>
+
+                <!-- Grid row -->
+                <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                    <input type="text" id="contact-name" class="form-control">
+                    <label for="contact-name" class="">Your name</label>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                    <input type="text" id="contact-email" class="form-control">
+                    <label for="contact-email" class="">Your email</label>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <!-- Grid row -->
+                <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+                    <div class="md-form mb-0">
+                    <input type="text" id="contact-Subject" class="form-control">
+                    <label for="contact-Subject" class="">Subject</label>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+                <!-- Grid row -->
+                <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+                    <div class="md-form">
+                    <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                    <label for="contact-message">Your message</label>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-purple btn-md">Send</a>
+            </div>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li>
+                <i class="fas fa-map-marker-alt fa-2x purple-text"></i>
+                <p>Mappa Pangea</p>
+                </li>
+                <li>
+                <i class="fas fa-phone fa-2x mt-4 purple-text"></i>
+                <p>Ehhh</p>
+                </li>
+                <li>
+                <i class="fas fa-envelope fa-2x mt-4 purple-text"></i>
+                <p class="mb-0">contact@example.com</p>
+                </li>
+            </ul>
+            </div>
+            <!-- Grid column -->
+
         </div>
-        <!--/.Call to action-->
+        <!-- Grid row -->
 
-        <hr class="my-4">
+    </div>
 
-        <!-- Social icons -->
-        <div class="pb-4">
-            <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-                <i class="fab fa-facebook-f mr-3"></i>
-            </a>
+</section>
+<!--Section: contact-->
 
-            <a href="https://twitter.com/MDBootstrap" target="_blank">
-                <i class="fab fa-twitter mr-3"></i>
-            </a>
+</main>
+<!--Main layout-->
 
-            <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-                <i class="fab fa-youtube mr-3"></i>
-            </a>
+<!--Footer-->
+<!-- Footer -->
+<footer class="page-footer font-small pt-4">
 
-            <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-                <i class="fab fa-google-plus-g mr-3"></i>
-            </a>
+    <!-- Footer Elements -->
+    <div class="container">
 
-            <a href="https://dribbble.com/mdbootstrap" target="_blank">
-                <i class="fab fa-dribbble mr-3"></i>
-            </a>
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1">
+            <i class="fab fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1">
+            <i class="fab fa-google-plus-g"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin-in"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-dribbble mx-1">
+            <i class="fab fa-dribbble"> </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
 
-            <a href="https://pinterest.com/mdbootstrap" target="_blank">
-                <i class="fab fa-pinterest mr-3"></i>
-            </a>
+    </div>
+    <!-- Footer Elements -->
 
-            <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-                <i class="fab fa-github mr-3"></i>
-            </a>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
 
-            <a href="http://codepen.io/mdbootstrap/" target="_blank">
-                <i class="fab fa-codepen mr-3"></i>
-            </a>
-        </div>
-        <!-- Social icons -->
+  </footer>
+  <!-- Footer -->
+  <!-- /Start your project here-->
 
-        <!--Copyright-->
-        <div class="footer-copyright py-3">
-            © 2018 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
-        </div>
-        <!--/.Copyright-->
-
-    </footer>
-    <!--/.Footer-->
-
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Initializations -->
-    <script type="text/javascript">
-        // Animations initialization
-        new WOW().init();
-    </script>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+  <!-- Custom -->
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
