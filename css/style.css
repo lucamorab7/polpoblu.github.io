@@ -7,12 +7,12 @@ background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, 
 
 }
 
-.video-intro2 {
+.video-intro {
 position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%; 
-  min-height: 100%;
+  max-height: 30%;
 }
 
 .view {
@@ -33,7 +33,7 @@ position: fixed;
     position: relative;
     display: block; }
   .view video.video-intro {
-    z-index: -100;
+    z-index: 0;
     top: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
