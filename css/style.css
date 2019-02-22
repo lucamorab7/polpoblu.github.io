@@ -15,7 +15,7 @@ height: 100vh;
 }
 
 .top-nav-collapse {
-background-color: #563e91 !important;
+background-color: #1f1f1f !important;
 }
 
 .navbar:not(.top-nav-collapse) {
