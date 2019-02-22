@@ -63,7 +63,7 @@ header,
     -o-transition: 1s opacity;
     transition: 1s opacity;
     min-width: 100%;
-    min-height: 30%;
+    min-height: 100%;
     width: auto;
-    height: 30%; }
+    height: auto; }
 
