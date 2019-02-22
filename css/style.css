@@ -18,6 +18,10 @@ height: 100vh;
 background-color: #1f1f1f !important;
 }
 
+.top-nav-collapse, .page-footer {
+    background-color: #1f1f1f !important;
+}
+
 .navbar:not(.top-nav-collapse) {
 background: transparent !important;
 }
