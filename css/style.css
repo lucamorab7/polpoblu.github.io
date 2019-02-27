@@ -30,7 +30,7 @@ body,
   background-color: #1C2331; }
 
 .rgba-gradient {
-  background: -moz-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
-  background: linear-gradient(to 45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+  background: -moz-linear-gradient(45deg, rgba(213, 15, 61, 0.8), rgba(13, 17, 198, 0.8) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(213, 15, 61, 0.8), rgba(13, 17, 198, 0.8) 100%);
+  background: linear-gradient(to 45deg, rgba(213, 15, 61, 08), rgba(13, 17, 198, 0.8) 100%);
 }
