@@ -81,16 +81,9 @@ background-attachment: fixed;
     opacity: 1; }
 
 #videosList {
- max-width: 600px; 
   overflow: hidden;
 }
 
-.video {
-  background-image: url('https://polpoblu.github.io/tribute.png');
-  height: 330px;
-  width: 600px;
-  margin-bottom: 50px;
-}
 
 /* Hide Play button + controls on iOS */
 video::-webkit-media-controls {
