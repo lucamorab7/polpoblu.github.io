@@ -1,6 +1,9 @@
 html,
 body,
-header,
+header {
+   height: 100%;
+}
+
 #intro-section {
 height: 75%;
 }
