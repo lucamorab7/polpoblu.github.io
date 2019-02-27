@@ -79,3 +79,20 @@ background-attachment: fixed;
   transition: all 0.4s ease-in-out; }
   .overlay .mask:hover {
     opacity: 1; }
+
+#videosList {
+ max-width: 600px; 
+  overflow: hidden;
+}
+
+.video {
+  background-image: url('https://polpoblu.github.io/tribute.png');
+  height: 330px;
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
+}
