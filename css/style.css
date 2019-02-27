@@ -80,12 +80,3 @@ background-attachment: fixed;
   .overlay .mask:hover {
     opacity: 1; }
 
-#videosList {
-  overflow: hidden;
-}
-
-
-/* Hide Play button + controls on iOS */
-video::-webkit-media-controls {
-    display:none !important;
-}
