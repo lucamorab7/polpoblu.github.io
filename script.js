@@ -1,5 +1,6 @@
 // JavaScript Document
 $(window).load(function() {
+	"use strict";
     var $container = $('.animate-grid .gallary-thumbs');
     $container.isotope({
         filter: '*',
