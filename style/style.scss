@@ -1,16 +1,4 @@
-@charset "utf-8";
-/* CSS Document */
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
-
-// === Variables =====
-$perspective:     60rem;
-$font-size:       4.25rem;
-$split-position:  49%;
-$split-thickness: 4px;
-$split-color:     #FF2C75;
-
-// === Settings =====
-%font-settings {
+.sidenav {
   font-family: "Gilroy ExtraBold", system-ui, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -19,254 +7,272 @@ $split-color:     #FF2C75;
   -webkit-text-size-adjust: 100%;
 }
 
-// === Codepen Setup =====
 html,
 body {
   width: 100vw;
   height: 100vh;
 }
-body {
-  @extend %font-settings;
-  background: linear-gradient(45deg, #02001F,#1F1B4E);
-  transform-style: preserve-3d;
-  transform: perspective($perspective);
+
+.sidenav {
+  background: linear-gradient(45deg, #fff, #fff);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(60rem);
+          transform: perspective(60rem);
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 
-// === Menu <ul> =====
 .Menu-list {
-  font-size: $font-size;
+  font-size: 4.25rem;
   line-height: 1.2;
   text-transform: uppercase;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: rotateX(-10deg) rotateY(20deg); // overwritten by JS
+  -webkit-transform: rotateX(-10deg) rotateY(20deg);
+          transform: rotateX(-10deg) rotateY(20deg);
 }
 
-// === Menu item =====
 .Menu-list-item {
   position: relative;
   color: transparent;
   cursor: pointer;
-  
-  // === Split Line =====
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: $split-position;
-    left: -10%;
-    right: -10%;
-    height: $split-thickness;
-    border-radius: $split-thickness;
-    margin-top: -($split-thickness / 2);
-    background: $split-color;
-    transform: scale(0);
-    transition: transform .8s cubic-bezier(.16,1.08,.38,.98);
-    z-index: 1;
-  }
+}
+.Menu-list-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 49%;
+  left: -10%;
+  right: -10%;
+  height: 4px;
+  border-radius: 4px;
+  margin-top: -2px;
+  background: #000;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  transition: -webkit-transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+  transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+  transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98), -webkit-transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+  z-index: 1;
 }
 
-// === Top/bottom mask =====
 .Mask {
   display: block;
   position: absolute;
   overflow: hidden;
-  color: $split-color;
+  color: #000;
   top: 0;
-  height: $split-position;
-  transition: all .8s cubic-bezier(.16,1.08,.38,.98);
-  
-  span { display: block; }
+  height: 49%;
+  transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+}
+.Mask span {
+  display: block;
 }
 
-// === Bottom mask specific =====
 .Mask + .Mask {
-  top: $split-position - 0.1;
-  height: 100 - $split-position + 0.1;
-  
-  span { transform: translateY(-$split-position); }
+  top: 48.9%;
+  height: 51.1%;
+}
+.Mask + .Mask span {
+  -webkit-transform: translateY(-49%);
+          transform: translateY(-49%);
 }
 
-// === Where the fun stuff happens =====
-.Menu-list-item:hover,
-.Menu-list-item:active {
-  .Mask { color: #FFF; transform: skewX(12deg) translateX(5px); }
-  .Mask + .Mask { transform: skewX(12deg) translateX(-5px); }
-  &::before { transform: scale(1); }
+.Menu-list-item:hover .Mask,
+.Menu-list-item:active .Mask {
+  color: #ff0000;
+  -webkit-transform: skewX(12deg) translateX(5px);
+          transform: skewX(12deg) translateX(5px);
+}
+.Menu-list-item:hover .Mask + .Mask,
+.Menu-list-item:active .Mask + .Mask {
+  -webkit-transform: skewX(12deg) translateX(-5px);
+          transform: skewX(12deg) translateX(-5px);
+}
+.Menu-list-item:hover::before,
+.Menu-list-item:active::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
-ul, ol { padding: 0;}
+ul, ol {
+  padding: 0;
+}
 
-section { 
+section {
   display: block;
 }
 
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 20%;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+  background-color: #111;
+  /* Black */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
   padding-top: 20px;
 }
 
 /* Style page content */
 .main {
-  margin-left: 160px; /* Same as the width of the sidebar */
+  margin-left: 160px;
+  /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
 
-
 /*GALLARY*/
 .gallary .fa.fa-plus {
-    height: 30px;
-	width: 30px;
-	border: 1px solid #FCAC45;
-	font-size: 20px;
-	padding: 5px;
-	border-radius: 50%;
-	color: #FCAC45;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #FCAC45;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 50%;
+  color: #FCAC45;
 }
 
 .gallary ul {
-	padding: 10px 0;
+  padding: 10px 0;
 }
 
 .gallary ul li {
-	display: inline-block;
-	margin-top: 10px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .gallary ol li {
-	display: inline-block;
-	margin-left: 20px;
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .gallary ol li:after {
-	content: ' | ';
-	margin-left: 20px;
+  content: ' | ';
+  margin-left: 20px;
 }
 
 .gallary ol li:last-child:after {
-	content: '';
+  content: '';
 }
 
 .gallary ol li a {
-	color: #222222;
+  color: #222222;
 }
 
 .gallary ol li a.active {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 .gallary .gallary-item {
-    margin-bottom: 20px !important;
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 400px;
+  margin-bottom: 20px !important;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 .gallary .gallary-item .hover-bg {
-	overflow: hidden;
-	position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
 .gallary .hover-bg .hover-text {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.66);
-	padding: 25% 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.5s;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.66);
+  padding: 25% 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
-.gallary .hover-bg .hover-text>h4 {
-	opacity: 0;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
+.gallary .hover-bg .hover-text > h4 {
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all 0.3s;
 }
 
-.gallary .hover-bg:hover .hover-text>h4 {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
+.gallary .hover-bg:hover .hover-text > h4 {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
-.gallary .hover-bg .hover-text>i {
-	opacity: 0;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	transition: all 0.3s;
+.gallary .hover-bg .hover-text > i {
+  opacity: 0;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all 0.3s;
 }
 
-.gallary .hover-bg:hover .hover-text>i {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
+.gallary .hover-bg:hover .hover-text > i {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
 }
 
-.isotope-item { 
-    z-index: 2;
+.isotope-item {
+  z-index: 2;
 }
 
-.isotope-hidden.isotope-item { 
-	z-index: 1;
+.isotope-hidden.isotope-item {
+  z-index: 1;
 }
 
 .isotope,
 .isotope .isotope-item {
-    /* change duration value to whatever you like */
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    transition-duration: 0.8s;
+  /* change duration value to whatever you like */
+  transition-duration: 0.8s;
 }
 
 .isotope-item {
-    margin-right: -1px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+  margin-right: -1px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .isotope {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition-property: height, width;
-    -moz-transition-property: height, width;
-    transition-property: height, width;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition-property: height, width;
 }
 
 .isotope .isotope-item {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    transition-property: transform, opacity;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
 }
 
 @media (max-width: 767px) {
-    .isotope {
-        height: auto !important;
-    }
-    .isotope-item {
-    	text-align: center;
-    	transform: none !important;
-    	position: relative !important;
-    }
+  .isotope {
+    height: auto !important;
+  }
+
+  .isotope-item {
+    text-align: center;
+    -webkit-transform: none !important;
+            transform: none !important;
+    position: relative !important;
+  }
 }
