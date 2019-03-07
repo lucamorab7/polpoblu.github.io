@@ -1,29 +1,29 @@
-// JavaScript Document
-$(window).load(function() {
-    var $container = $('.animate-grid .gallary-thumbs');
-    $container.isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-        }
-    });
-    $('.animate-grid .categories a').click(function() {
-        $('.animate-grid .categories .active').removeClass('active');
-        $(this).addClass('active');
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector,
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-        });
-        return false;
-    });
-});
+$(function () {
+		
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+			// http://mixitup.io
+			$('#portfoliolist').mixItUp({
+				selectors: {
+  			  target: '.portfolio',
+  			  filter: '.filter'	
+  		  },
+  		  load: {
+    		  filter: '.app' // show app tab on first load
+    		}     
+			});								
+		
+		}
+
+	};
+	
+	// Run the show!
+	filterList.init();
+	
+});		
 
 var $menu = $('.Menu-list'),
     $item = $('.Menu-list-item'),
