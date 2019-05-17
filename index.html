@@ -1,70 +1,74 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8">
-<title>Portfolio</title>
-<link href="//polpoblu.github.io/style/style.css" rel="stylesheet" type="text/css">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="//polpoblu.github.io/script/script.js"></script>
-<script type="text/javascript" src="https://www.designbootstrap.com/livedemos/2015/02/04/pink/assets/js/jquery.isotope.js"></script>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/style/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script  src="script.js" type="text/javascript">
 
 
+
+    </script>
+    <title> Portfolio</title>
 </head>
-
 <body>
-<section class="sidenav">
-	<!-- @NOTE: the onclicks are used for touch devices since I'm lazy and didnt use <a> tags -->
-<div class="Menu">
-  <ul class="Menu-list" data-offset="10">
-    <li class="Menu-list-item" data-offset="20" onclick>
-      Home
-      <span class="Mask"><span>Home</span></span>
-      <span class="Mask"><span>Home</span></span>
-    </li>
-    <li class="Menu-list-item" data-offset="16" onclick>
-      About
-      <span class="Mask"><span>About</span></span>
-      <span class="Mask"><span>About</span></span>
-    </li>
-    <li class="Menu-list-item" data-offset="12" onclick>
-      Work
-      <span class="Mask"><span>Work</span></span>
-      <span class="Mask"><span>Work</span></span>
-    </li>
-    <li class="Menu-list-item" data-offset="8" onclick>
-      Contact
-      <span class="Mask"><span>Contact</span></span>
-      <span class="Mask"><span>Contact</span></span>
-    </li>
-  </ul>
-</div>
-</section>
-<section class="main">
-    <ul id="filters" class="clearfix">
-<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
-<li><span class="filter" data-filter=".app">App</span></li>
-<li><span class="filter" data-filter=".card">Card</span></li>
-<li><span class="filter" data-filter=".icon">Icon</span></li>
-<li><span class="filter" data-filter=".logo">Logo</span></li>
-<li><span class="filter" data-filter=".web">Web</span></li>
-</ul>
-	<div id="portfoliolist">
-  <div class="portfolio logo" data-cat="logo">
-    <div class="portfolio-wrapper">
-      <img src="img/portfolios/logo/5.jpg" alt="" />
-      <div class="label">
-        <div class="label-text">
-          <a class="text-title">Bird Document</a> 
-          <span class="text-category">Logo</span>
+    <header><h1>Portfolio</h1></header>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+                <ul>
+                    <li class="button active" data-filter="all">All</li>
+                    <li class="button" data-filter="illustration">Illustration</li>
+                    <li class="button" data-filter="animation">Animation</li>
+                    <li class="button" data-filter="layout">Layout</li>
+                    <div style="clear:both;"></div>
+                </ul>
+            </div>
         </div>
-        <div class="label-bg"> </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
 
+        <div class="row justify-content-center">
+            
+                <div class="box filter illustration">
+                <div class="content"><a href=" https://polpoblu.github.io/high.png"><img src=" https://polpoblu.github.io/high.png"></a></div>
+            </div>
+            
+
+            <div class="box filter animation">
+                <div class="content"><img src="https://polpoblu.github.io/borsa1.gif"></div>
+                </div>
+
+                    <div class="box filter animation">
+                <div class="content"><img src="https://polpoblu.github.io/bg2.gif"></div>
+                        </div>
+
+                        <div class="box filter animation">
+                <div class="content"><img src="https://polpoblu.github.io/bg3.gif"></div>
+                            </div>
+
+                            <div class="box filter layout">
+                <div class="content"><img src="https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/morrissey.png"></div>
+                                </div>
+            
+            <div class="box filter illustration">
+                <div class="content"><a href=" https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/mastervietnam.png"><img src="https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/vietnam.png"></a></div>
+            </div>
+            
+            <div class="box filter illustration">
+                <div class="content"><a href=" https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/put_it_in_action.png"><img src="https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/put_it_in_action.png"></a></div>
+            </div>
+            
+            <div class="box filter illustration">
+                <div class="content"><a href=" https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/united.png"><img src="https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/united.png"></a></div>
+            </div>
+            
+            <div class="box filter illustration">
+                <div class="content"><a href=" https://polpoblu.github.io/poster-usa.jpg"><img src=" https://polpoblu.github.io/poster-usa.jpg"></a></div>
+            </div>
+            
+        </div>
+    </div>
+    <footer>Copyright 2019 Luca Morabito</footer>
 </body>
 </html>
