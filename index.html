@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html >
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="/style/style.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script  src="/script/script.js" type="text/javascript">
-
-
-
-    </script>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
+    
     <title> Portfolio</title>
 </head>
 <body>
-    <header><h1>Portfolio</h1></header>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col">
+    <header>
+    <h1>Luca Morabito <br> <span>Portfolio</span></h1>
+    </header>
+  
+    <div id="top"></div>
+    
+    <div class="gallery-filter">
+        <div class="row">
                 <ul>
                     <li class="button active" data-filter="all">All</li>
                     <li class="button" data-filter="illustration">Illustration</li>
@@ -25,50 +24,72 @@
                     <li class="button" data-filter="layout">Layout</li>
                     <div style="clear:both;"></div>
                 </ul>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            
-                <div class="box filter illustration">
-                <div class="content"><a href=" https://polpoblu.github.io/high.png"><img src=" https://polpoblu.github.io/high.png"></a></div>
-            </div>
-            
-
-            <div class="box filter animation">
-                <div class="content"><img src="https://polpoblu.github.io/borsa1.gif"></div>
-                </div>
-
-                    <div class="box filter animation">
-                <div class="content"><img src="https://polpoblu.github.io/bg2.gif"></div>
-                        </div>
-
-                        <div class="box filter animation">
-                <div class="content"><img src="https://polpoblu.github.io/bg3.gif"></div>
-                            </div>
-
-                            <div class="box filter layout">
-                <div class="content"><img src="https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/morrissey.png"></div>
-                                </div>
-            
-            <div class="box filter illustration">
-                <div class="content"><a href="https://polpoblu.github.io/vietnam.png"><img src="https://polpoblu.github.io/vietnam.png"></a></div>
-            </div>
-            
-            <div class="box filter illustration">
-                <div class="content"><a href=" https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/put_it_in_action.png"><img src="https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/put_it_in_action.png"></a></div>
-            </div>
-            
-            <div class="box filter illustration">
-                <div class="content"><a href=" https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/united.png"><img src="https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/united.png"></a></div>
-            </div>
-            
-            <div class="box filter illustration">
-                <div class="content"><a href=" https://polpoblu.github.io/poster-usa.jpg"><img src=" https://polpoblu.github.io/poster-usa.jpg"></a></div>
-            </div>
-            
         </div>
     </div>
+       
+        
+
+    <section class="gallery">
+        <div class="row">
+            <ul>
+			<a href="#" class="close"></a>
+                
+                <li class="box filter animation">
+                <div class="content"><a href="#neet"><img src="https://polpoblu.github.io/high.png"><div class="overlay">
+    <div class="text">Neet</div>
+  </div></a></div>
+            </li>
+            
+
+            <li class="box filter animation">
+                <div class="content" id="#vbag"><img src="https://polpoblu.github.io/borsa1.gif"></div>
+                </li>
+
+                    <li class="box filter animation">
+                <div class="content" id="#vbshoes"><img src="https://polpoblu.github.io/bg2.gif"></div>
+                        </li>
+
+                        <li class="box filter animation">
+                <div class="content" id="#vwshoes"><img src="https://polpoblu.github.io/bg3.gif"></div>
+                            </li>
+
+                            <li class="box filter layout">
+                <div class="content" id="#thesis"><img src="https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/morrissey.png"></div>
+                                </li>
+            
+            <li class="box filter illustration">
+                <div class="content"><a href=" https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/mastervietnam.png" id="#vietnam"><img src="https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/vietnam.png"></a></div>
+            </li>
+            
+            <li class="box filter illustration">
+                <div class="content"><a href=" https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/put_it_in_action.png"  id="#action"><img src="https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/put_it_in_action.png"></a></div>
+            </li>
+            
+            <li class="box filter illustration">
+                <div class="content"><a href=" https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/united.png"  id="#united"><img src="https://raw.githubusercontent.com/polpoblu/polpoblu.github.io/master/united.png"></a></div>
+            </li>
+            
+            <li class="box filter illustration">
+                <div class="content"><a href=" https://polpoblu.github.io/poster-usa.jpg"  id="#usa"><img src="https://polpoblu.github.io/poster-usa.jpg"></a></li>
+                </ul> 
+            </div>
+                        
+        
+                <!-- Neet -->
+	<div id="neet" class="port">
+		<div class="row">
+			<div class="description">
+				<h1>NEET</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+			</div>
+				<img src="https://polpoblu.github.io/high.png" alt="">
+			</div>
+		</div>
+        
+        </div>
+    </section>
     <footer>Copyright 2019 Luca Morabito</footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script  src="script.js" type="text/javascript"></script>
 </body>
 </html>
