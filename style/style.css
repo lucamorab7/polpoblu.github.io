@@ -1,88 +1,236 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-html {
-    margin: 0;
-    padding: 0;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif !important;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #fff;
+      background-color: #111;
 
 }
 
-ul{
+a {
+  color: #fff;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  clear: both;
+}
+.content img {
+   width: 100%;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery ul li {
+display: inline-block;
+    margin: 0 0.87719%;
+  overflow: hidden;
+}
+
+header {
+  background-color: aliceblue;
+  color: #111;
+  text-align: center;
+  padding: 30px 0 60px;
+}
+header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 0.8;
+  padding-top: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+header h1 span {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 1rem;
+  line-height: 1;
+}
+header p {
+  padding-top: 30px;
+}
+
+.gallery {
+  position: relative;
+  overflow: hidden;
+}
+.gallery ul {
+  position: relative;
+    width: 90%;
+    margin: auto;
+text-align: center;
+}
+.gallery ul li {
+  margin-bottom: 10px;
+  position: relative;
+}
+.gallery ul li a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+
+
+.port {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+  background: #ffffff;
+  background-color: #111;
+  z-index: 103;
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  border-bottom: 1px solid #d0d0d0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.port img {
+  width: 50%;
+}
+.port .description {
+  float: left;
+  width: 50%;
+  max-height: 100%;
+  padding: 0 40px 40px;
+  overflow: auto;
+}
+.port h1 {
+  font-size: 35px;
+  line-height: 2.3;
+  padding: 0;
+}
+.port > * {
+  opacity: 0;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+.port.item_open {
+  visibility: visible;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.port > * {
+  opacity: 1;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.close {
+  width: 16px;
+  height: 16px;
+  background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2021%2021%22%0A%09%20enable-background%3D%22new%200%200%2021%2021%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%20id%3D%22layer1%22%20transform%3D%22translate%280%2C-1031.3622%29%22%3E%0A%09%3Cpath%20id%3D%22path2987%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M0%2C1031.4l21%2C21%22/%3E%0A%09%3Cpath%20id%3D%22path2989%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M21%2C1031.4l-21%2C21%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A%0A) no-repeat;
+  position: absolute;
+  right: 0px;
+  top: -100px;
+  opacity: 1;
+  z-index: 500;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.item_open .close {
+  opacity: 1;
+  top: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery-filter ul {
+    padding: 2rem;
     text-align: center;
     list-style:none;
-    padding: 2rem;
 }
 
-ul li{
+.gallery-filter ul li{
     padding: 0rem 3rem 0rem 3rem;
     font-variant:small-caps;
         display: inline-block;
-
 }
 
-ul li:hover,
-.active{
-    color: darkred;
+.content {
+      width: 250px;
+    height: 250px;
+        overflow: hidden;
+          background-position: center; 
 }
 
-.container {
-    padding: 1rem;
-    box-sizing: border-box;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-image: linear-gradient(to bottom left, rgba(0,0,0,0.4), rgba(0,0,0,0.8));
 }
 
-.row{
-    margin: auto;
+.gallery ul li a:hover .overlay {
+  opacity: 1;
 }
 
-    .container .box {
-display: inline-block;
-
-    }
-
-div {
-    overflow: hidden;
-}
-
-img {
-max-width: 300px;
-    position: relative;
+.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform:translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.content{
-    width:300px;
-    height:300px;
-}
 
-.illustration {
-background-color: bisque;
-}
 
-.animation {
-    background-color: bisque;
+li:hover { 
+    transition: all .4s ease-in-out;
+    transform: scale(0.95); }
 
-}
+.content:hover { 
+    transition: all .4s ease-in-out;
+    transform: scale(1.1); }
 
-.layout {
-    background-color: bisque;
-
-}
-
-footer {
-    font-size: smaller;
-    text-align: center;
-    padding: 0.2rem;
-}
-
-header{
-    padding:1rem;
-    text-align:center;
-    text-transform:uppercase;
+h1:hover{
+        transition: all .4s ease-in-out;
+  letter-spacing: 6px;
+    font-size: 3.1rem;
 }
